@@ -49,11 +49,22 @@ public class SongBoard implements SongBoardInterface {
 			System.out.println(rank + ", " + artist + ", " + songname);
 		}
 	}
+	public void printSongsTenToTwenty() {
+		SongEntry song;
+		// Print header
+		System.out.println(songBoardTitle);
+		System.out.println("The Top to Twenty Songs Are:");
+		for (int i = 9; i < 20; i++) {
+			song = songArray[i];
+			System.out.println(song.SongEntryToString());
+		}
+	}
 	
 	// Test SongBoard Implementation
 	public static void main(String[] args) {
 		SongBoard mySongBoard;
 		mySongBoard = new SongBoard();
 		mySongBoard.printTopTen();
+		mySongBoard.printSongsTenToTwenty();
 	}
 }
