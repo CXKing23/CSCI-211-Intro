@@ -4,6 +4,6 @@ public interface SongBoardInterface {
 	void printTopTen();
  
 	// future:
-	// void printSongsTenToTwenty();
+	void printSongsTenToTwenty();
  
 } 
